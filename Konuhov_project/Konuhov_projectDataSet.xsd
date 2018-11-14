@@ -1,0 +1,1266 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Konuhov_projectDataSet" targetNamespace="http://tempuri.org/Konuhov_projectDataSet.xsd" xmlns:mstns="http://tempuri.org/Konuhov_projectDataSet.xsd" xmlns="http://tempuri.org/Konuhov_projectDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="Konuhov_projectConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="Konuhov_projectConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Konuhov_project.Properties.Settings.GlobalReference.Default.Konuhov_projectConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ClientsTableAdapter" GeneratorDataComponentClassName="ClientsTableAdapter" Name="Clients" UserDataComponentName="ClientsTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Konuhov_projectConnectionString (Settings)" DbObjectName="Konuhov_project.dbo.Clients" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Фамилия, Имя, Отчество, Адрес_проживания, Номер_паспорта, Номер_телефона FROM Clients</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Фамилия" DataSetColumn="Фамилия" />
+              <Mapping SourceColumn="Имя" DataSetColumn="Имя" />
+              <Mapping SourceColumn="Отчество" DataSetColumn="Отчество" />
+              <Mapping SourceColumn="Адрес_проживания" DataSetColumn="Адрес_проживания" />
+              <Mapping SourceColumn="Номер_телефона" DataSetColumn="Номер_телефона" />
+              <Mapping SourceColumn="Номер_паспорта" DataSetColumn="Номер_паспорта" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Filtr_dollarTableAdapter" GeneratorDataComponentClassName="Filtr_dollarTableAdapter" Name="Filtr_dollar" UserDataComponentName="Filtr_dollarTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Konuhov_projectConnectionString (Settings)" DbObjectName="Konuhov_project.dbo.Filtr_dollar" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Дата, Покупка, Продажа, Название_валюты FROM Filtr_dollar</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Дата" DataSetColumn="Дата" />
+              <Mapping SourceColumn="Покупка" DataSetColumn="Покупка" />
+              <Mapping SourceColumn="Продажа" DataSetColumn="Продажа" />
+              <Mapping SourceColumn="Название_валюты" DataSetColumn="Название_валюты" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Filtr_eetkCoinTableAdapter" GeneratorDataComponentClassName="Filtr_eetkCoinTableAdapter" Name="Filtr_eetkCoin" UserDataComponentName="Filtr_eetkCoinTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Konuhov_projectConnectionString (Settings)" DbObjectName="Konuhov_project.dbo.Filtr_eetkCoin" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Дата, Покупка, Продажа, Название_валюты FROM Filtr_eetkCoin</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Дата" DataSetColumn="Дата" />
+              <Mapping SourceColumn="Покупка" DataSetColumn="Покупка" />
+              <Mapping SourceColumn="Продажа" DataSetColumn="Продажа" />
+              <Mapping SourceColumn="Название_валюты" DataSetColumn="Название_валюты" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Filtr_euroTableAdapter" GeneratorDataComponentClassName="Filtr_euroTableAdapter" Name="Filtr_euro" UserDataComponentName="Filtr_euroTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Konuhov_projectConnectionString (Settings)" DbObjectName="Konuhov_project.dbo.Filtr_euro" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Дата, Покупка, Продажа, Название_валюты FROM Filtr_euro</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Дата" DataSetColumn="Дата" />
+              <Mapping SourceColumn="Покупка" DataSetColumn="Покупка" />
+              <Mapping SourceColumn="Продажа" DataSetColumn="Продажа" />
+              <Mapping SourceColumn="Название_валюты" DataSetColumn="Название_валюты" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Kurs_valutTableAdapter" GeneratorDataComponentClassName="Kurs_valutTableAdapter" Name="Kurs_valut" UserDataComponentName="Kurs_valutTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Konuhov_projectConnectionString (Settings)" DbObjectName="Konuhov_project.dbo.Kurs_valut" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Дата, Покупка, Продажа, Название_валюты FROM Kurs_valut</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Дата" DataSetColumn="Дата" />
+              <Mapping SourceColumn="Покупка" DataSetColumn="Покупка" />
+              <Mapping SourceColumn="Продажа" DataSetColumn="Продажа" />
+              <Mapping SourceColumn="Название_валюты" DataSetColumn="Название_валюты" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Otchet_dogovor_o_vkladeTableAdapter" GeneratorDataComponentClassName="Otchet_dogovor_o_vkladeTableAdapter" Name="Otchet_dogovor_o_vklade" UserDataComponentName="Otchet_dogovor_o_vkladeTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Konuhov_projectConnectionString (Settings)" DbObjectName="Konuhov_project.dbo.Otchet_dogovor_o_vklade" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Валюта, Адрес_клиента, Дата_вклада, Дата_возрата, Имя_клиента, Имя_сотрудника, Минимальная_сумма, [Минимальный_срок(год/лет)], Название_вклада, Отметка_о_возрате_вклада, Отчество_клиента, Отчество_сотрудника, Процентная_ставка, Сумма_вклада, Сумма_возрата, Тел_клиента, Фамилия_клиента, Фамилия_сотрудника FROM Otchet_dogovor_o_vklade</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Валюта" DataSetColumn="Валюта" />
+              <Mapping SourceColumn="Фамилия_клиента" DataSetColumn="Фамилия_клиента" />
+              <Mapping SourceColumn="Имя_клиента" DataSetColumn="Имя_клиента" />
+              <Mapping SourceColumn="Отчество_клиента" DataSetColumn="Отчество_клиента" />
+              <Mapping SourceColumn="Адрес_клиента" DataSetColumn="Адрес_клиента" />
+              <Mapping SourceColumn="Тел_клиента" DataSetColumn="Тел_клиента" />
+              <Mapping SourceColumn="Фамилия_сотрудника" DataSetColumn="Фамилия_сотрудника" />
+              <Mapping SourceColumn="Имя_сотрудника" DataSetColumn="Имя_сотрудника" />
+              <Mapping SourceColumn="Отчество_сотрудника" DataSetColumn="Отчество_сотрудника" />
+              <Mapping SourceColumn="Название_вклада" DataSetColumn="Название_вклада" />
+              <Mapping SourceColumn="Минимальный_срок(год/лет)" DataSetColumn="Минимальный_срок(год/лет)" />
+              <Mapping SourceColumn="Минимальная_сумма" DataSetColumn="Минимальная_сумма" />
+              <Mapping SourceColumn="Процентная_ставка" DataSetColumn="Процентная_ставка" />
+              <Mapping SourceColumn="Дата_вклада" DataSetColumn="Дата_вклада" />
+              <Mapping SourceColumn="Сумма_вклада" DataSetColumn="Сумма_вклада" />
+              <Mapping SourceColumn="Сумма_возрата" DataSetColumn="Сумма_возрата" />
+              <Mapping SourceColumn="Дата_возрата" DataSetColumn="Дата_возрата" />
+              <Mapping SourceColumn="Отметка_о_возрате_вклада" DataSetColumn="Отметка_о_возрате_вклада" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="vidu_vkladovTableAdapter" GeneratorDataComponentClassName="vidu_vkladovTableAdapter" Name="vidu_vkladov" UserDataComponentName="vidu_vkladovTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Konuhov_projectConnectionString (Settings)" DbObjectName="Konuhov_project.dbo.vidu_vkladov" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Валюта, Дополнительные_условия, Минимальная_сумма, [Минимальный_срок(лет)], Название_вклада, Процентная_ставка FROM vidu_vkladov</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Валюта" DataSetColumn="Валюта" />
+              <Mapping SourceColumn="Название_вклада" DataSetColumn="Название_вклада" />
+              <Mapping SourceColumn="Минимальный_срок(лет)" DataSetColumn="Минимальный_срок(лет)" />
+              <Mapping SourceColumn="Минимальная_сумма" DataSetColumn="Минимальная_сумма" />
+              <Mapping SourceColumn="Процентная_ставка" DataSetColumn="Процентная_ставка" />
+              <Mapping SourceColumn="Дополнительные_условия" DataSetColumn="Дополнительные_условия" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Zapros_Sotrud+DolzhnostiTableAdapter" GeneratorDataComponentClassName="Zapros_Sotrud_DolzhnostiTableAdapter" Name="Zapros_Sotrud+Dolzhnosti" UserDataComponentName="Zapros_Sotrud+DolzhnostiTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Konuhov_projectConnectionString (Settings)" DbObjectName="Konuhov_project.dbo.[Zapros_Sotrud+Dolzhnosti]" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Фамилия, Имя, Отчество, Пол, Адрес, Телефон, Оклад, Обязанности, Требования, День_рождения, Наименование_должности, Паспортные_данные FROM [Zapros_Sotrud+Dolzhnosti]</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Фамилия" DataSetColumn="Фамилия" />
+              <Mapping SourceColumn="Имя" DataSetColumn="Имя" />
+              <Mapping SourceColumn="Отчество" DataSetColumn="Отчество" />
+              <Mapping SourceColumn="Пол" DataSetColumn="Пол" />
+              <Mapping SourceColumn="Адрес" DataSetColumn="Адрес" />
+              <Mapping SourceColumn="Телефон" DataSetColumn="Телефон" />
+              <Mapping SourceColumn="Оклад" DataSetColumn="Оклад" />
+              <Mapping SourceColumn="Обязанности" DataSetColumn="Обязанности" />
+              <Mapping SourceColumn="Требования" DataSetColumn="Требования" />
+              <Mapping SourceColumn="День_рождения" DataSetColumn="День_рождения" />
+              <Mapping SourceColumn="Паспортные_данные" DataSetColumn="Паспортные_данные" />
+              <Mapping SourceColumn="Наименование_должности" DataSetColumn="Наименование_должности" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Dogovor_o_vkladeTableAdapter" GeneratorDataComponentClassName="Dogovor_o_vkladeTableAdapter" Name="Dogovor_o_vklade" UserDataComponentName="Dogovor_o_vkladeTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Konuhov_projectConnectionString (Settings)" DbObjectName="Konuhov_project.dbo.Dogovor_o_vklade" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM [dbo].[Dogovor_o_vklade] WHERE (([Code_dogov] = @Original_Code_dogov) AND ((@IsNull_Code_vkladchika = 1 AND [Code_vkladchika] IS NULL) OR ([Code_vkladchika] = @Original_Code_vkladchika)) AND ((@IsNull_Code_sotrud = 1 AND [Code_sotrud] IS NULL) OR ([Code_sotrud] = @Original_Code_sotrud)) AND ((@IsNull_Code_vklada = 1 AND [Code_vklada] IS NULL) OR ([Code_vklada] = @Original_Code_vklada)) AND ((@IsNull_Data_vklada = 1 AND [Data_vklada] IS NULL) OR ([Data_vklada] = @Original_Data_vklada)) AND ((@IsNull_Summa_vklada = 1 AND [Summa_vklada] IS NULL) OR ([Summa_vklada] = @Original_Summa_vklada)) AND ((@IsNull_Data_vazrata = 1 AND [Data_vazrata] IS NULL) OR ([Data_vazrata] = @Original_Data_vazrata)) AND ((@IsNull_Otmetka_o_vozrate = 1 AND [Otmetka_o_vozrate] IS NULL) OR ([Otmetka_o_vozrate] = @Original_Otmetka_o_vozrate)))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int64" Direction="Input" ParameterName="@Original_Code_dogov" Precision="0" ProviderType="BigInt" Scale="0" Size="0" SourceColumn="Code_dogov" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Code_vkladchika" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Code_vkladchika" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int64" Direction="Input" ParameterName="@Original_Code_vkladchika" Precision="0" ProviderType="BigInt" Scale="0" Size="0" SourceColumn="Code_vkladchika" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Code_sotrud" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Code_sotrud" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int64" Direction="Input" ParameterName="@Original_Code_sotrud" Precision="0" ProviderType="BigInt" Scale="0" Size="0" SourceColumn="Code_sotrud" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Code_vklada" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Code_vklada" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int64" Direction="Input" ParameterName="@Original_Code_vklada" Precision="0" ProviderType="BigInt" Scale="0" Size="0" SourceColumn="Code_vklada" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Data_vklada" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Data_vklada" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@Original_Data_vklada" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="Data_vklada" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Summa_vklada" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Summa_vklada" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Currency" Direction="Input" ParameterName="@Original_Summa_vklada" Precision="0" ProviderType="Money" Scale="0" Size="0" SourceColumn="Summa_vklada" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Data_vazrata" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Data_vazrata" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@Original_Data_vazrata" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="Data_vazrata" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Otmetka_o_vozrate" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Otmetka_o_vozrate" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@Original_Otmetka_o_vozrate" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="Otmetka_o_vozrate" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [dbo].[Dogovor_o_vklade] ([Code_vkladchika], [Code_sotrud], [Code_vklada], [Data_vklada], [Summa_vklada], [Data_vazrata], [Otmetka_o_vozrate]) VALUES (@Code_vkladchika, @Code_sotrud, @Code_vklada, @Data_vklada, @Summa_vklada, @Data_vazrata, @Otmetka_o_vozrate);
+SELECT Code_dogov, Code_vkladchika, Code_sotrud, Code_vklada, Data_vklada, Summa_vklada, Data_vazrata, Otmetka_o_vozrate FROM Dogovor_o_vklade WHERE (Code_dogov = SCOPE_IDENTITY())</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int64" Direction="Input" ParameterName="@Code_vkladchika" Precision="0" ProviderType="BigInt" Scale="0" Size="0" SourceColumn="Code_vkladchika" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int64" Direction="Input" ParameterName="@Code_sotrud" Precision="0" ProviderType="BigInt" Scale="0" Size="0" SourceColumn="Code_sotrud" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int64" Direction="Input" ParameterName="@Code_vklada" Precision="0" ProviderType="BigInt" Scale="0" Size="0" SourceColumn="Code_vklada" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@Data_vklada" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="Data_vklada" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Currency" Direction="Input" ParameterName="@Summa_vklada" Precision="0" ProviderType="Money" Scale="0" Size="0" SourceColumn="Summa_vklada" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@Data_vazrata" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="Data_vazrata" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@Otmetka_o_vozrate" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="Otmetka_o_vozrate" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Code_dogov, Code_vkladchika, Code_sotrud, Code_vklada, Data_vklada, Summa_vklada, Data_vazrata, Otmetka_o_vozrate FROM dbo.Dogovor_o_vklade</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE [dbo].[Dogovor_o_vklade] SET [Code_vkladchika] = @Code_vkladchika, [Code_sotrud] = @Code_sotrud, [Code_vklada] = @Code_vklada, [Data_vklada] = @Data_vklada, [Summa_vklada] = @Summa_vklada, [Data_vazrata] = @Data_vazrata, [Otmetka_o_vozrate] = @Otmetka_o_vozrate WHERE (([Code_dogov] = @Original_Code_dogov) AND ((@IsNull_Code_vkladchika = 1 AND [Code_vkladchika] IS NULL) OR ([Code_vkladchika] = @Original_Code_vkladchika)) AND ((@IsNull_Code_sotrud = 1 AND [Code_sotrud] IS NULL) OR ([Code_sotrud] = @Original_Code_sotrud)) AND ((@IsNull_Code_vklada = 1 AND [Code_vklada] IS NULL) OR ([Code_vklada] = @Original_Code_vklada)) AND ((@IsNull_Data_vklada = 1 AND [Data_vklada] IS NULL) OR ([Data_vklada] = @Original_Data_vklada)) AND ((@IsNull_Summa_vklada = 1 AND [Summa_vklada] IS NULL) OR ([Summa_vklada] = @Original_Summa_vklada)) AND ((@IsNull_Data_vazrata = 1 AND [Data_vazrata] IS NULL) OR ([Data_vazrata] = @Original_Data_vazrata)) AND ((@IsNull_Otmetka_o_vozrate = 1 AND [Otmetka_o_vozrate] IS NULL) OR ([Otmetka_o_vozrate] = @Original_Otmetka_o_vozrate)));
+SELECT Code_dogov, Code_vkladchika, Code_sotrud, Code_vklada, Data_vklada, Summa_vklada, Data_vazrata, Otmetka_o_vozrate FROM Dogovor_o_vklade WHERE (Code_dogov = @Code_dogov)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int64" Direction="Input" ParameterName="@Code_vkladchika" Precision="0" ProviderType="BigInt" Scale="0" Size="0" SourceColumn="Code_vkladchika" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int64" Direction="Input" ParameterName="@Code_sotrud" Precision="0" ProviderType="BigInt" Scale="0" Size="0" SourceColumn="Code_sotrud" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int64" Direction="Input" ParameterName="@Code_vklada" Precision="0" ProviderType="BigInt" Scale="0" Size="0" SourceColumn="Code_vklada" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@Data_vklada" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="Data_vklada" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Currency" Direction="Input" ParameterName="@Summa_vklada" Precision="0" ProviderType="Money" Scale="0" Size="0" SourceColumn="Summa_vklada" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@Data_vazrata" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="Data_vazrata" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@Otmetka_o_vozrate" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="Otmetka_o_vozrate" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int64" Direction="Input" ParameterName="@Original_Code_dogov" Precision="0" ProviderType="BigInt" Scale="0" Size="0" SourceColumn="Code_dogov" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Code_vkladchika" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Code_vkladchika" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int64" Direction="Input" ParameterName="@Original_Code_vkladchika" Precision="0" ProviderType="BigInt" Scale="0" Size="0" SourceColumn="Code_vkladchika" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Code_sotrud" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Code_sotrud" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int64" Direction="Input" ParameterName="@Original_Code_sotrud" Precision="0" ProviderType="BigInt" Scale="0" Size="0" SourceColumn="Code_sotrud" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Code_vklada" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Code_vklada" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int64" Direction="Input" ParameterName="@Original_Code_vklada" Precision="0" ProviderType="BigInt" Scale="0" Size="0" SourceColumn="Code_vklada" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Data_vklada" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Data_vklada" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@Original_Data_vklada" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="Data_vklada" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Summa_vklada" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Summa_vklada" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Currency" Direction="Input" ParameterName="@Original_Summa_vklada" Precision="0" ProviderType="Money" Scale="0" Size="0" SourceColumn="Summa_vklada" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Data_vazrata" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Data_vazrata" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@Original_Data_vazrata" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="Data_vazrata" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Otmetka_o_vozrate" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Otmetka_o_vozrate" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@Original_Otmetka_o_vozrate" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="Otmetka_o_vozrate" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="Code_dogov" ColumnName="Code_dogov" DataSourceName="Konuhov_project.dbo.Dogovor_o_vklade" DataTypeServer="bigint" DbType="Int64" Direction="Input" ParameterName="@Code_dogov" Precision="0" ProviderType="BigInt" Scale="0" Size="8" SourceColumn="Code_dogov" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Code_dogov" DataSetColumn="Code_dogov" />
+              <Mapping SourceColumn="Code_vkladchika" DataSetColumn="Code_vkladchika" />
+              <Mapping SourceColumn="Code_sotrud" DataSetColumn="Code_sotrud" />
+              <Mapping SourceColumn="Code_vklada" DataSetColumn="Code_vklada" />
+              <Mapping SourceColumn="Data_vklada" DataSetColumn="Data_vklada" />
+              <Mapping SourceColumn="Summa_vklada" DataSetColumn="Summa_vklada" />
+              <Mapping SourceColumn="Data_vazrata" DataSetColumn="Data_vazrata" />
+              <Mapping SourceColumn="Otmetka_o_vozrate" DataSetColumn="Otmetka_o_vozrate" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DolzhnostiTableAdapter" GeneratorDataComponentClassName="DolzhnostiTableAdapter" Name="Dolzhnosti" UserDataComponentName="DolzhnostiTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Konuhov_projectConnectionString (Settings)" DbObjectName="Konuhov_project.dbo.Dolzhnosti" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM [dbo].[Dolzhnosti] WHERE (([Code_dol] = @Original_Code_dol) AND ((@IsNull_Naim_dol = 1 AND [Naim_dol] IS NULL) OR ([Naim_dol] = @Original_Naim_dol)) AND ((@IsNull_Oklad = 1 AND [Oklad] IS NULL) OR ([Oklad] = @Original_Oklad)))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int64" Direction="Input" ParameterName="@Original_Code_dol" Precision="0" ProviderType="BigInt" Scale="0" Size="0" SourceColumn="Code_dol" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Naim_dol" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Naim_dol" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_Naim_dol" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Naim_dol" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Oklad" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Oklad" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Currency" Direction="Input" ParameterName="@Original_Oklad" Precision="0" ProviderType="Money" Scale="0" Size="0" SourceColumn="Oklad" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [dbo].[Dolzhnosti] ([Naim_dol], [Oklad], [Obazannosti], [Trebovania]) VALUES (@Naim_dol, @Oklad, @Obazannosti, @Trebovania);
+SELECT Code_dol, Naim_dol, Oklad, Obazannosti, Trebovania FROM Dolzhnosti WHERE (Code_dol = SCOPE_IDENTITY())</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Naim_dol" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Naim_dol" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Currency" Direction="Input" ParameterName="@Oklad" Precision="0" ProviderType="Money" Scale="0" Size="0" SourceColumn="Oklad" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Obazannosti" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Obazannosti" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Trebovania" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Trebovania" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Code_dol, Naim_dol, Oklad, Obazannosti, Trebovania FROM dbo.Dolzhnosti</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE [dbo].[Dolzhnosti] SET [Naim_dol] = @Naim_dol, [Oklad] = @Oklad, [Obazannosti] = @Obazannosti, [Trebovania] = @Trebovania WHERE (([Code_dol] = @Original_Code_dol) AND ((@IsNull_Naim_dol = 1 AND [Naim_dol] IS NULL) OR ([Naim_dol] = @Original_Naim_dol)) AND ((@IsNull_Oklad = 1 AND [Oklad] IS NULL) OR ([Oklad] = @Original_Oklad)));
+SELECT Code_dol, Naim_dol, Oklad, Obazannosti, Trebovania FROM Dolzhnosti WHERE (Code_dol = @Code_dol)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Naim_dol" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Naim_dol" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Currency" Direction="Input" ParameterName="@Oklad" Precision="0" ProviderType="Money" Scale="0" Size="0" SourceColumn="Oklad" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Obazannosti" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Obazannosti" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Trebovania" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Trebovania" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int64" Direction="Input" ParameterName="@Original_Code_dol" Precision="0" ProviderType="BigInt" Scale="0" Size="0" SourceColumn="Code_dol" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Naim_dol" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Naim_dol" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_Naim_dol" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Naim_dol" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Oklad" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Oklad" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Currency" Direction="Input" ParameterName="@Original_Oklad" Precision="0" ProviderType="Money" Scale="0" Size="0" SourceColumn="Oklad" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="Code_dol" ColumnName="Code_dol" DataSourceName="Konuhov_project.dbo.Dolzhnosti" DataTypeServer="bigint" DbType="Int64" Direction="Input" ParameterName="@Code_dol" Precision="0" ProviderType="BigInt" Scale="0" Size="8" SourceColumn="Code_dol" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Code_dol" DataSetColumn="Code_dol" />
+              <Mapping SourceColumn="Naim_dol" DataSetColumn="Naim_dol" />
+              <Mapping SourceColumn="Oklad" DataSetColumn="Oklad" />
+              <Mapping SourceColumn="Obazannosti" DataSetColumn="Obazannosti" />
+              <Mapping SourceColumn="Trebovania" DataSetColumn="Trebovania" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="KursTableAdapter" GeneratorDataComponentClassName="KursTableAdapter" Name="Kurs" UserDataComponentName="KursTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Konuhov_projectConnectionString (Settings)" DbObjectName="Konuhov_project.dbo.Kurs" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM [dbo].[Kurs] WHERE (([Code_kurs] = @Original_Code_kurs) AND ((@IsNull_Code_val = 1 AND [Code_val] IS NULL) OR ([Code_val] = @Original_Code_val)) AND ((@IsNull_Data_kurs = 1 AND [Data_kurs] IS NULL) OR ([Data_kurs] = @Original_Data_kurs)) AND ((@IsNull_Cost_pokup = 1 AND [Cost_pokup] IS NULL) OR ([Cost_pokup] = @Original_Cost_pokup)) AND ((@IsNull_Cost_sale = 1 AND [Cost_sale] IS NULL) OR ([Cost_sale] = @Original_Cost_sale)))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int64" Direction="Input" ParameterName="@Original_Code_kurs" Precision="0" ProviderType="BigInt" Scale="0" Size="0" SourceColumn="Code_kurs" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Code_val" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Code_val" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_Code_val" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Code_val" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Data_kurs" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Data_kurs" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@Original_Data_kurs" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="Data_kurs" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Cost_pokup" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Cost_pokup" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Currency" Direction="Input" ParameterName="@Original_Cost_pokup" Precision="0" ProviderType="Money" Scale="0" Size="0" SourceColumn="Cost_pokup" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Cost_sale" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Cost_sale" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Currency" Direction="Input" ParameterName="@Original_Cost_sale" Precision="0" ProviderType="Money" Scale="0" Size="0" SourceColumn="Cost_sale" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [dbo].[Kurs] ([Code_val], [Data_kurs], [Cost_pokup], [Cost_sale]) VALUES (@Code_val, @Data_kurs, @Cost_pokup, @Cost_sale);
+SELECT Code_kurs, Code_val, Data_kurs, Cost_pokup, Cost_sale FROM Kurs WHERE (Code_kurs = SCOPE_IDENTITY())</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Code_val" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Code_val" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@Data_kurs" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="Data_kurs" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Currency" Direction="Input" ParameterName="@Cost_pokup" Precision="0" ProviderType="Money" Scale="0" Size="0" SourceColumn="Cost_pokup" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Currency" Direction="Input" ParameterName="@Cost_sale" Precision="0" ProviderType="Money" Scale="0" Size="0" SourceColumn="Cost_sale" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Code_kurs, Code_val, Data_kurs, Cost_pokup, Cost_sale FROM dbo.Kurs</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE [dbo].[Kurs] SET [Code_val] = @Code_val, [Data_kurs] = @Data_kurs, [Cost_pokup] = @Cost_pokup, [Cost_sale] = @Cost_sale WHERE (([Code_kurs] = @Original_Code_kurs) AND ((@IsNull_Code_val = 1 AND [Code_val] IS NULL) OR ([Code_val] = @Original_Code_val)) AND ((@IsNull_Data_kurs = 1 AND [Data_kurs] IS NULL) OR ([Data_kurs] = @Original_Data_kurs)) AND ((@IsNull_Cost_pokup = 1 AND [Cost_pokup] IS NULL) OR ([Cost_pokup] = @Original_Cost_pokup)) AND ((@IsNull_Cost_sale = 1 AND [Cost_sale] IS NULL) OR ([Cost_sale] = @Original_Cost_sale)));
+SELECT Code_kurs, Code_val, Data_kurs, Cost_pokup, Cost_sale FROM Kurs WHERE (Code_kurs = @Code_kurs)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Code_val" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Code_val" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@Data_kurs" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="Data_kurs" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Currency" Direction="Input" ParameterName="@Cost_pokup" Precision="0" ProviderType="Money" Scale="0" Size="0" SourceColumn="Cost_pokup" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Currency" Direction="Input" ParameterName="@Cost_sale" Precision="0" ProviderType="Money" Scale="0" Size="0" SourceColumn="Cost_sale" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int64" Direction="Input" ParameterName="@Original_Code_kurs" Precision="0" ProviderType="BigInt" Scale="0" Size="0" SourceColumn="Code_kurs" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Code_val" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Code_val" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_Code_val" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Code_val" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Data_kurs" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Data_kurs" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@Original_Data_kurs" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="Data_kurs" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Cost_pokup" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Cost_pokup" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Currency" Direction="Input" ParameterName="@Original_Cost_pokup" Precision="0" ProviderType="Money" Scale="0" Size="0" SourceColumn="Cost_pokup" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Cost_sale" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Cost_sale" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Currency" Direction="Input" ParameterName="@Original_Cost_sale" Precision="0" ProviderType="Money" Scale="0" Size="0" SourceColumn="Cost_sale" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="Code_kurs" ColumnName="Code_kurs" DataSourceName="Konuhov_project.dbo.Kurs" DataTypeServer="bigint" DbType="Int64" Direction="Input" ParameterName="@Code_kurs" Precision="0" ProviderType="BigInt" Scale="0" Size="8" SourceColumn="Code_kurs" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Code_kurs" DataSetColumn="Code_kurs" />
+              <Mapping SourceColumn="Code_val" DataSetColumn="Code_val" />
+              <Mapping SourceColumn="Data_kurs" DataSetColumn="Data_kurs" />
+              <Mapping SourceColumn="Cost_pokup" DataSetColumn="Cost_pokup" />
+              <Mapping SourceColumn="Cost_sale" DataSetColumn="Cost_sale" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="SotrudnikiTableAdapter" GeneratorDataComponentClassName="SotrudnikiTableAdapter" Name="Sotrudniki" UserDataComponentName="SotrudnikiTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Konuhov_projectConnectionString (Settings)" DbObjectName="Konuhov_project.dbo.Sotrudniki" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM [dbo].[Sotrudniki] WHERE (([Code_sotrud] = @Original_Code_sotrud) AND ((@IsNull_Familia = 1 AND [Familia] IS NULL) OR ([Familia] = @Original_Familia)) AND ((@IsNull_Imya = 1 AND [Imya] IS NULL) OR ([Imya] = @Original_Imya)) AND ((@IsNull_Otchestvo = 1 AND [Otchestvo] IS NULL) OR ([Otchestvo] = @Original_Otchestvo)) AND ((@IsNull_Pol = 1 AND [Pol] IS NULL) OR ([Pol] = @Original_Pol)) AND ((@IsNull_Data_birthday = 1 AND [Data_birthday] IS NULL) OR ([Data_birthday] = @Original_Data_birthday)) AND ((@IsNull_Tel = 1 AND [Tel] IS NULL) OR ([Tel] = @Original_Tel)) AND ((@IsNull_Code_dol = 1 AND [Code_dol] IS NULL) OR ([Code_dol] = @Original_Code_dol)))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int64" Direction="Input" ParameterName="@Original_Code_sotrud" Precision="0" ProviderType="BigInt" Scale="0" Size="0" SourceColumn="Code_sotrud" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Familia" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Familia" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_Familia" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Familia" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Imya" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Imya" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_Imya" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Imya" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Otchestvo" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Otchestvo" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_Otchestvo" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Otchestvo" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Pol" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Pol" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_Pol" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Pol" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Data_birthday" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Data_birthday" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@Original_Data_birthday" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="Data_birthday" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Tel" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Tel" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_Tel" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Tel" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Code_dol" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Code_dol" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int64" Direction="Input" ParameterName="@Original_Code_dol" Precision="0" ProviderType="BigInt" Scale="0" Size="0" SourceColumn="Code_dol" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [dbo].[Sotrudniki] ([Familia], [Imya], [Otchestvo], [Pol], [Data_birthday], [Adress], [Tel], [Pasport_data], [Code_dol]) VALUES (@Familia, @Imya, @Otchestvo, @Pol, @Data_birthday, @Adress, @Tel, @Pasport_data, @Code_dol);
+SELECT Code_sotrud, Familia, Imya, Otchestvo, Pol, Data_birthday, Adress, Tel, Pasport_data, Code_dol FROM Sotrudniki WHERE (Code_sotrud = SCOPE_IDENTITY())</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Familia" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Familia" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Imya" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Imya" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Otchestvo" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Otchestvo" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Pol" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Pol" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@Data_birthday" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="Data_birthday" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Adress" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Adress" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Tel" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Tel" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Pasport_data" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Pasport_data" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int64" Direction="Input" ParameterName="@Code_dol" Precision="0" ProviderType="BigInt" Scale="0" Size="0" SourceColumn="Code_dol" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Code_sotrud, Familia, Imya, Otchestvo, Pol, Data_birthday, Adress, Tel, Pasport_data, Code_dol FROM dbo.Sotrudniki</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE [dbo].[Sotrudniki] SET [Familia] = @Familia, [Imya] = @Imya, [Otchestvo] = @Otchestvo, [Pol] = @Pol, [Data_birthday] = @Data_birthday, [Adress] = @Adress, [Tel] = @Tel, [Pasport_data] = @Pasport_data, [Code_dol] = @Code_dol WHERE (([Code_sotrud] = @Original_Code_sotrud) AND ((@IsNull_Familia = 1 AND [Familia] IS NULL) OR ([Familia] = @Original_Familia)) AND ((@IsNull_Imya = 1 AND [Imya] IS NULL) OR ([Imya] = @Original_Imya)) AND ((@IsNull_Otchestvo = 1 AND [Otchestvo] IS NULL) OR ([Otchestvo] = @Original_Otchestvo)) AND ((@IsNull_Pol = 1 AND [Pol] IS NULL) OR ([Pol] = @Original_Pol)) AND ((@IsNull_Data_birthday = 1 AND [Data_birthday] IS NULL) OR ([Data_birthday] = @Original_Data_birthday)) AND ((@IsNull_Tel = 1 AND [Tel] IS NULL) OR ([Tel] = @Original_Tel)) AND ((@IsNull_Code_dol = 1 AND [Code_dol] IS NULL) OR ([Code_dol] = @Original_Code_dol)));
+SELECT Code_sotrud, Familia, Imya, Otchestvo, Pol, Data_birthday, Adress, Tel, Pasport_data, Code_dol FROM Sotrudniki WHERE (Code_sotrud = @Code_sotrud)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Familia" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Familia" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Imya" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Imya" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Otchestvo" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Otchestvo" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Pol" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Pol" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@Data_birthday" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="Data_birthday" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Adress" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Adress" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Tel" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Tel" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Pasport_data" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Pasport_data" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int64" Direction="Input" ParameterName="@Code_dol" Precision="0" ProviderType="BigInt" Scale="0" Size="0" SourceColumn="Code_dol" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int64" Direction="Input" ParameterName="@Original_Code_sotrud" Precision="0" ProviderType="BigInt" Scale="0" Size="0" SourceColumn="Code_sotrud" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Familia" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Familia" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_Familia" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Familia" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Imya" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Imya" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_Imya" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Imya" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Otchestvo" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Otchestvo" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_Otchestvo" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Otchestvo" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Pol" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Pol" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_Pol" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Pol" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Data_birthday" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Data_birthday" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@Original_Data_birthday" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="Data_birthday" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Tel" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Tel" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_Tel" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Tel" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Code_dol" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Code_dol" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int64" Direction="Input" ParameterName="@Original_Code_dol" Precision="0" ProviderType="BigInt" Scale="0" Size="0" SourceColumn="Code_dol" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="Code_sotrud" ColumnName="Code_sotrud" DataSourceName="Konuhov_project.dbo.Sotrudniki" DataTypeServer="bigint" DbType="Int64" Direction="Input" ParameterName="@Code_sotrud" Precision="0" ProviderType="BigInt" Scale="0" Size="8" SourceColumn="Code_sotrud" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Code_sotrud" DataSetColumn="Code_sotrud" />
+              <Mapping SourceColumn="Familia" DataSetColumn="Familia" />
+              <Mapping SourceColumn="Imya" DataSetColumn="Imya" />
+              <Mapping SourceColumn="Otchestvo" DataSetColumn="Otchestvo" />
+              <Mapping SourceColumn="Pol" DataSetColumn="Pol" />
+              <Mapping SourceColumn="Data_birthday" DataSetColumn="Data_birthday" />
+              <Mapping SourceColumn="Adress" DataSetColumn="Adress" />
+              <Mapping SourceColumn="Tel" DataSetColumn="Tel" />
+              <Mapping SourceColumn="Pasport_data" DataSetColumn="Pasport_data" />
+              <Mapping SourceColumn="Code_dol" DataSetColumn="Code_dol" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ValutTableAdapter" GeneratorDataComponentClassName="ValutTableAdapter" Name="Valut" UserDataComponentName="ValutTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Konuhov_projectConnectionString (Settings)" DbObjectName="Konuhov_project.dbo.Valut" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM [dbo].[Valut] WHERE (([Code_val] = @Original_Code_val) AND ((@IsNull_Naz_val = 1 AND [Naz_val] IS NULL) OR ([Naz_val] = @Original_Naz_val)))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_Code_val" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Code_val" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Naz_val" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Naz_val" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_Naz_val" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Naz_val" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [dbo].[Valut] ([Naz_val]) VALUES (@Naz_val);
+SELECT Code_val, Naz_val FROM Valut WHERE (Code_val = SCOPE_IDENTITY())</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Naz_val" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Naz_val" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Code_val, Naz_val FROM dbo.Valut</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE [dbo].[Valut] SET [Naz_val] = @Naz_val WHERE (([Code_val] = @Original_Code_val) AND ((@IsNull_Naz_val = 1 AND [Naz_val] IS NULL) OR ([Naz_val] = @Original_Naz_val)));
+SELECT Code_val, Naz_val FROM Valut WHERE (Code_val = @Code_val)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Naz_val" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Naz_val" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_Code_val" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Code_val" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Naz_val" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Naz_val" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_Naz_val" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Naz_val" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="Code_val" ColumnName="Code_val" DataSourceName="Konuhov_project.dbo.Valut" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@Code_val" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="Code_val" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Code_val" DataSetColumn="Code_val" />
+              <Mapping SourceColumn="Naz_val" DataSetColumn="Naz_val" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="VkladchikiTableAdapter" GeneratorDataComponentClassName="VkladchikiTableAdapter" Name="Vkladchiki" UserDataComponentName="VkladchikiTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Konuhov_projectConnectionString (Settings)" DbObjectName="Konuhov_project.dbo.Vkladchiki" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM [dbo].[Vkladchiki] WHERE (([Code_vkladchika] = @Original_Code_vkladchika) AND ((@IsNull_Familia = 1 AND [Familia] IS NULL) OR ([Familia] = @Original_Familia)) AND ((@IsNull_Imya = 1 AND [Imya] IS NULL) OR ([Imya] = @Original_Imya)) AND ((@IsNull_Otchestvo = 1 AND [Otchestvo] IS NULL) OR ([Otchestvo] = @Original_Otchestvo)) AND ((@IsNull_Tel = 1 AND [Tel] IS NULL) OR ([Tel] = @Original_Tel)))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int64" Direction="Input" ParameterName="@Original_Code_vkladchika" Precision="0" ProviderType="BigInt" Scale="0" Size="0" SourceColumn="Code_vkladchika" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Familia" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Familia" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_Familia" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Familia" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Imya" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Imya" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_Imya" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Imya" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Otchestvo" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Otchestvo" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_Otchestvo" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Otchestvo" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Tel" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Tel" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_Tel" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Tel" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [dbo].[Vkladchiki] ([Familia], [Imya], [Otchestvo], [Adress], [Tel], [Pasport_data]) VALUES (@Familia, @Imya, @Otchestvo, @Adress, @Tel, @Pasport_data);
+SELECT Code_vkladchika, Familia, Imya, Otchestvo, Adress, Tel, Pasport_data FROM Vkladchiki WHERE (Code_vkladchika = SCOPE_IDENTITY())</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Familia" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Familia" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Imya" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Imya" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Otchestvo" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Otchestvo" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Adress" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Adress" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Tel" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Tel" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Pasport_data" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Pasport_data" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Code_vkladchika, Familia, Imya, Otchestvo, Adress, Tel, Pasport_data FROM dbo.Vkladchiki</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE [dbo].[Vkladchiki] SET [Familia] = @Familia, [Imya] = @Imya, [Otchestvo] = @Otchestvo, [Adress] = @Adress, [Tel] = @Tel, [Pasport_data] = @Pasport_data WHERE (([Code_vkladchika] = @Original_Code_vkladchika) AND ((@IsNull_Familia = 1 AND [Familia] IS NULL) OR ([Familia] = @Original_Familia)) AND ((@IsNull_Imya = 1 AND [Imya] IS NULL) OR ([Imya] = @Original_Imya)) AND ((@IsNull_Otchestvo = 1 AND [Otchestvo] IS NULL) OR ([Otchestvo] = @Original_Otchestvo)) AND ((@IsNull_Tel = 1 AND [Tel] IS NULL) OR ([Tel] = @Original_Tel)));
+SELECT Code_vkladchika, Familia, Imya, Otchestvo, Adress, Tel, Pasport_data FROM Vkladchiki WHERE (Code_vkladchika = @Code_vkladchika)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Familia" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Familia" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Imya" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Imya" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Otchestvo" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Otchestvo" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Adress" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Adress" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Tel" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Tel" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Pasport_data" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Pasport_data" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int64" Direction="Input" ParameterName="@Original_Code_vkladchika" Precision="0" ProviderType="BigInt" Scale="0" Size="0" SourceColumn="Code_vkladchika" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Familia" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Familia" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_Familia" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Familia" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Imya" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Imya" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_Imya" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Imya" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Otchestvo" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Otchestvo" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_Otchestvo" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Otchestvo" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Tel" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Tel" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_Tel" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Tel" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="Code_vkladchika" ColumnName="Code_vkladchika" DataSourceName="Konuhov_project.dbo.Vkladchiki" DataTypeServer="bigint" DbType="Int64" Direction="Input" ParameterName="@Code_vkladchika" Precision="0" ProviderType="BigInt" Scale="0" Size="8" SourceColumn="Code_vkladchika" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Code_vkladchika" DataSetColumn="Code_vkladchika" />
+              <Mapping SourceColumn="Familia" DataSetColumn="Familia" />
+              <Mapping SourceColumn="Imya" DataSetColumn="Imya" />
+              <Mapping SourceColumn="Otchestvo" DataSetColumn="Otchestvo" />
+              <Mapping SourceColumn="Adress" DataSetColumn="Adress" />
+              <Mapping SourceColumn="Tel" DataSetColumn="Tel" />
+              <Mapping SourceColumn="Pasport_data" DataSetColumn="Pasport_data" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="VkladuTableAdapter" GeneratorDataComponentClassName="VkladuTableAdapter" Name="Vkladu" UserDataComponentName="VkladuTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Konuhov_projectConnectionString (Settings)" DbObjectName="Konuhov_project.dbo.Vkladu" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM [dbo].[Vkladu] WHERE (([Code_vklada] = @Original_Code_vklada) AND ((@IsNull_Nazvanie = 1 AND [Nazvanie] IS NULL) OR ([Nazvanie] = @Original_Nazvanie)) AND ((@IsNull_Min_srok = 1 AND [Min_srok] IS NULL) OR ([Min_srok] = @Original_Min_srok)) AND ((@IsNull_Min_summa = 1 AND [Min_summa] IS NULL) OR ([Min_summa] = @Original_Min_summa)) AND ((@IsNull_Code_val = 1 AND [Code_val] IS NULL) OR ([Code_val] = @Original_Code_val)) AND ((@IsNull_Proc_stavka = 1 AND [Proc_stavka] IS NULL) OR ([Proc_stavka] = @Original_Proc_stavka)))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int64" Direction="Input" ParameterName="@Original_Code_vklada" Precision="0" ProviderType="BigInt" Scale="0" Size="0" SourceColumn="Code_vklada" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Nazvanie" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Nazvanie" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_Nazvanie" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Nazvanie" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Min_srok" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Min_srok" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Byte" Direction="Input" ParameterName="@Original_Min_srok" Precision="0" ProviderType="TinyInt" Scale="0" Size="0" SourceColumn="Min_srok" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Min_summa" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Min_summa" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_Min_summa" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Min_summa" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Code_val" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Code_val" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_Code_val" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Code_val" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Proc_stavka" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Proc_stavka" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Original_Proc_stavka" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Proc_stavka" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [dbo].[Vkladu] ([Nazvanie], [Min_srok], [Min_summa], [Code_val], [Proc_stavka], [Dop_uslovie]) VALUES (@Nazvanie, @Min_srok, @Min_summa, @Code_val, @Proc_stavka, @Dop_uslovie);
+SELECT Code_vklada, Nazvanie, Min_srok, Min_summa, Code_val, Proc_stavka, Dop_uslovie FROM Vkladu WHERE (Code_vklada = SCOPE_IDENTITY())</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Nazvanie" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Nazvanie" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Byte" Direction="Input" ParameterName="@Min_srok" Precision="0" ProviderType="TinyInt" Scale="0" Size="0" SourceColumn="Min_srok" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Min_summa" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Min_summa" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Code_val" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Code_val" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Proc_stavka" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Proc_stavka" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Dop_uslovie" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Dop_uslovie" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Code_vklada, Nazvanie, Min_srok, Min_summa, Code_val, Proc_stavka, Dop_uslovie FROM dbo.Vkladu</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE [dbo].[Vkladu] SET [Nazvanie] = @Nazvanie, [Min_srok] = @Min_srok, [Min_summa] = @Min_summa, [Code_val] = @Code_val, [Proc_stavka] = @Proc_stavka, [Dop_uslovie] = @Dop_uslovie WHERE (([Code_vklada] = @Original_Code_vklada) AND ((@IsNull_Nazvanie = 1 AND [Nazvanie] IS NULL) OR ([Nazvanie] = @Original_Nazvanie)) AND ((@IsNull_Min_srok = 1 AND [Min_srok] IS NULL) OR ([Min_srok] = @Original_Min_srok)) AND ((@IsNull_Min_summa = 1 AND [Min_summa] IS NULL) OR ([Min_summa] = @Original_Min_summa)) AND ((@IsNull_Code_val = 1 AND [Code_val] IS NULL) OR ([Code_val] = @Original_Code_val)) AND ((@IsNull_Proc_stavka = 1 AND [Proc_stavka] IS NULL) OR ([Proc_stavka] = @Original_Proc_stavka)));
+SELECT Code_vklada, Nazvanie, Min_srok, Min_summa, Code_val, Proc_stavka, Dop_uslovie FROM Vkladu WHERE (Code_vklada = @Code_vklada)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Nazvanie" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Nazvanie" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Byte" Direction="Input" ParameterName="@Min_srok" Precision="0" ProviderType="TinyInt" Scale="0" Size="0" SourceColumn="Min_srok" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Min_summa" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Min_summa" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Code_val" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Code_val" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Proc_stavka" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Proc_stavka" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Dop_uslovie" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Dop_uslovie" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int64" Direction="Input" ParameterName="@Original_Code_vklada" Precision="0" ProviderType="BigInt" Scale="0" Size="0" SourceColumn="Code_vklada" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Nazvanie" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Nazvanie" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_Nazvanie" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Nazvanie" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Min_srok" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Min_srok" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Byte" Direction="Input" ParameterName="@Original_Min_srok" Precision="0" ProviderType="TinyInt" Scale="0" Size="0" SourceColumn="Min_srok" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Min_summa" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Min_summa" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_Min_summa" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Min_summa" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Code_val" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Code_val" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_Code_val" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Code_val" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Proc_stavka" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Proc_stavka" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@Original_Proc_stavka" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="Proc_stavka" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="Code_vklada" ColumnName="Code_vklada" DataSourceName="Konuhov_project.dbo.Vkladu" DataTypeServer="bigint" DbType="Int64" Direction="Input" ParameterName="@Code_vklada" Precision="0" ProviderType="BigInt" Scale="0" Size="8" SourceColumn="Code_vklada" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Code_vklada" DataSetColumn="Code_vklada" />
+              <Mapping SourceColumn="Nazvanie" DataSetColumn="Nazvanie" />
+              <Mapping SourceColumn="Min_srok" DataSetColumn="Min_srok" />
+              <Mapping SourceColumn="Min_summa" DataSetColumn="Min_summa" />
+              <Mapping SourceColumn="Code_val" DataSetColumn="Code_val" />
+              <Mapping SourceColumn="Proc_stavka" DataSetColumn="Proc_stavka" />
+              <Mapping SourceColumn="Dop_uslovie" DataSetColumn="Dop_uslovie" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Konuhov_projectDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="Konuhov_projectDataSet" msprop:Generator_UserDSName="Konuhov_projectDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Zapros_Sotrud_x002B_Dolzhnosti" msprop:Generator_TableClassName="_Zapros_Sotrud_DolzhnostiDataTable" msprop:Generator_TableVarName="_tableZapros_Sotrud_Dolzhnosti" msprop:Generator_TablePropName="_Zapros_Sotrud_Dolzhnosti" msprop:Generator_RowDeletingName="_Zapros_Sotrud_DolzhnostiRowDeleting" msprop:Generator_RowChangingName="_Zapros_Sotrud_DolzhnostiRowChanging" msprop:Generator_RowEvHandlerName="_Zapros_Sotrud_DolzhnostiRowChangeEventHandler" msprop:Generator_RowDeletedName="_Zapros_Sotrud_DolzhnostiRowDeleted" msprop:Generator_UserTableName="Zapros_Sotrud+Dolzhnosti" msprop:Generator_RowChangedName="_Zapros_Sotrud_DolzhnostiRowChanged" msprop:Generator_RowEvArgName="_Zapros_Sotrud_DolzhnostiRowChangeEvent" msprop:Generator_RowClassName="_Zapros_Sotrud_DolzhnostiRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Фамилия" msprop:Generator_ColumnVarNameInTable="columnФамилия" msprop:Generator_ColumnPropNameInRow="Фамилия" msprop:Generator_ColumnPropNameInTable="ФамилияColumn" msprop:Generator_UserColumnName="Фамилия" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Имя" msprop:Generator_ColumnVarNameInTable="columnИмя" msprop:Generator_ColumnPropNameInRow="Имя" msprop:Generator_ColumnPropNameInTable="ИмяColumn" msprop:Generator_UserColumnName="Имя" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Отчество" msprop:Generator_ColumnVarNameInTable="columnОтчество" msprop:Generator_ColumnPropNameInRow="Отчество" msprop:Generator_ColumnPropNameInTable="ОтчествоColumn" msprop:Generator_UserColumnName="Отчество" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Пол" msprop:Generator_ColumnVarNameInTable="columnПол" msprop:Generator_ColumnPropNameInRow="Пол" msprop:Generator_ColumnPropNameInTable="ПолColumn" msprop:Generator_UserColumnName="Пол" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Адрес" msprop:Generator_ColumnVarNameInTable="columnАдрес" msprop:Generator_ColumnPropNameInRow="Адрес" msprop:Generator_ColumnPropNameInTable="АдресColumn" msprop:Generator_UserColumnName="Адрес" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Телефон" msprop:Generator_ColumnVarNameInTable="columnТелефон" msprop:Generator_ColumnPropNameInRow="Телефон" msprop:Generator_ColumnPropNameInTable="ТелефонColumn" msprop:Generator_UserColumnName="Телефон" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Оклад" msprop:Generator_ColumnVarNameInTable="columnОклад" msprop:Generator_ColumnPropNameInRow="Оклад" msprop:Generator_ColumnPropNameInTable="ОкладColumn" msprop:Generator_UserColumnName="Оклад" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Обязанности" msprop:Generator_ColumnVarNameInTable="columnОбязанности" msprop:Generator_ColumnPropNameInRow="Обязанности" msprop:Generator_ColumnPropNameInTable="ОбязанностиColumn" msprop:Generator_UserColumnName="Обязанности" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Требования" msprop:Generator_ColumnVarNameInTable="columnТребования" msprop:Generator_ColumnPropNameInRow="Требования" msprop:Generator_ColumnPropNameInTable="ТребованияColumn" msprop:Generator_UserColumnName="Требования" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="День_рождения" msprop:Generator_ColumnVarNameInTable="columnДень_рождения" msprop:Generator_ColumnPropNameInRow="День_рождения" msprop:Generator_ColumnPropNameInTable="День_рожденияColumn" msprop:Generator_UserColumnName="День_рождения" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Паспортные_данные" msprop:Generator_ColumnVarNameInTable="columnПаспортные_данные" msprop:Generator_ColumnPropNameInRow="Паспортные_данные" msprop:Generator_ColumnPropNameInTable="Паспортные_данныеColumn" msprop:Generator_UserColumnName="Паспортные_данные" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Наименование_должности" msprop:Generator_ColumnVarNameInTable="columnНаименование_должности" msprop:Generator_ColumnPropNameInRow="Наименование_должности" msprop:Generator_ColumnPropNameInTable="Наименование_должностиColumn" msprop:Generator_UserColumnName="Наименование_должности" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="vidu_vkladov" msprop:Generator_TableClassName="vidu_vkladovDataTable" msprop:Generator_TableVarName="tablevidu_vkladov" msprop:Generator_TablePropName="vidu_vkladov" msprop:Generator_RowDeletingName="vidu_vkladovRowDeleting" msprop:Generator_RowChangingName="vidu_vkladovRowChanging" msprop:Generator_RowEvHandlerName="vidu_vkladovRowChangeEventHandler" msprop:Generator_RowDeletedName="vidu_vkladovRowDeleted" msprop:Generator_UserTableName="vidu_vkladov" msprop:Generator_RowChangedName="vidu_vkladovRowChanged" msprop:Generator_RowEvArgName="vidu_vkladovRowChangeEvent" msprop:Generator_RowClassName="vidu_vkladovRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Валюта" msprop:Generator_ColumnVarNameInTable="columnВалюта" msprop:Generator_ColumnPropNameInRow="Валюта" msprop:Generator_ColumnPropNameInTable="ВалютаColumn" msprop:Generator_UserColumnName="Валюта" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Название_вклада" msprop:Generator_ColumnVarNameInTable="columnНазвание_вклада" msprop:Generator_ColumnPropNameInRow="Название_вклада" msprop:Generator_ColumnPropNameInTable="Название_вкладаColumn" msprop:Generator_UserColumnName="Название_вклада" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Минимальный_срок_x0028_лет_x0029_" msprop:Generator_ColumnVarNameInTable="_columnМинимальный_срок_лет_" msprop:Generator_ColumnPropNameInRow="_Минимальный_срок_лет_" msprop:Generator_ColumnPropNameInTable="_Минимальный_срок_лет_Column" msprop:Generator_UserColumnName="Минимальный_срок(лет)" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="Минимальная_сумма" msprop:Generator_ColumnVarNameInTable="columnМинимальная_сумма" msprop:Generator_ColumnPropNameInRow="Минимальная_сумма" msprop:Generator_ColumnPropNameInTable="Минимальная_суммаColumn" msprop:Generator_UserColumnName="Минимальная_сумма" type="xs:int" minOccurs="0" />
+              <xs:element name="Процентная_ставка" msprop:Generator_ColumnVarNameInTable="columnПроцентная_ставка" msprop:Generator_ColumnPropNameInRow="Процентная_ставка" msprop:Generator_ColumnPropNameInTable="Процентная_ставкаColumn" msprop:Generator_UserColumnName="Процентная_ставка" type="xs:double" minOccurs="0" />
+              <xs:element name="Дополнительные_условия" msprop:Generator_ColumnVarNameInTable="columnДополнительные_условия" msprop:Generator_ColumnPropNameInRow="Дополнительные_условия" msprop:Generator_ColumnPropNameInTable="Дополнительные_условияColumn" msprop:Generator_UserColumnName="Дополнительные_условия" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Kurs_valut" msprop:Generator_TableClassName="Kurs_valutDataTable" msprop:Generator_TableVarName="tableKurs_valut" msprop:Generator_TablePropName="Kurs_valut" msprop:Generator_RowDeletingName="Kurs_valutRowDeleting" msprop:Generator_RowChangingName="Kurs_valutRowChanging" msprop:Generator_RowEvHandlerName="Kurs_valutRowChangeEventHandler" msprop:Generator_RowDeletedName="Kurs_valutRowDeleted" msprop:Generator_UserTableName="Kurs_valut" msprop:Generator_RowChangedName="Kurs_valutRowChanged" msprop:Generator_RowEvArgName="Kurs_valutRowChangeEvent" msprop:Generator_RowClassName="Kurs_valutRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Дата" msprop:Generator_ColumnVarNameInTable="columnДата" msprop:Generator_ColumnPropNameInRow="Дата" msprop:Generator_ColumnPropNameInTable="ДатаColumn" msprop:Generator_UserColumnName="Дата" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Покупка" msprop:Generator_ColumnVarNameInTable="columnПокупка" msprop:Generator_ColumnPropNameInRow="Покупка" msprop:Generator_ColumnPropNameInTable="ПокупкаColumn" msprop:Generator_UserColumnName="Покупка" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Продажа" msprop:Generator_ColumnVarNameInTable="columnПродажа" msprop:Generator_ColumnPropNameInRow="Продажа" msprop:Generator_ColumnPropNameInTable="ПродажаColumn" msprop:Generator_UserColumnName="Продажа" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Название_валюты" msprop:Generator_ColumnVarNameInTable="columnНазвание_валюты" msprop:Generator_ColumnPropNameInRow="Название_валюты" msprop:Generator_ColumnPropNameInTable="Название_валютыColumn" msprop:Generator_UserColumnName="Название_валюты" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Filtr_euro" msprop:Generator_TableClassName="Filtr_euroDataTable" msprop:Generator_TableVarName="tableFiltr_euro" msprop:Generator_TablePropName="Filtr_euro" msprop:Generator_RowDeletingName="Filtr_euroRowDeleting" msprop:Generator_RowChangingName="Filtr_euroRowChanging" msprop:Generator_RowEvHandlerName="Filtr_euroRowChangeEventHandler" msprop:Generator_RowDeletedName="Filtr_euroRowDeleted" msprop:Generator_UserTableName="Filtr_euro" msprop:Generator_RowChangedName="Filtr_euroRowChanged" msprop:Generator_RowEvArgName="Filtr_euroRowChangeEvent" msprop:Generator_RowClassName="Filtr_euroRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Дата" msprop:Generator_ColumnVarNameInTable="columnДата" msprop:Generator_ColumnPropNameInRow="Дата" msprop:Generator_ColumnPropNameInTable="ДатаColumn" msprop:Generator_UserColumnName="Дата" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Покупка" msprop:Generator_ColumnVarNameInTable="columnПокупка" msprop:Generator_ColumnPropNameInRow="Покупка" msprop:Generator_ColumnPropNameInTable="ПокупкаColumn" msprop:Generator_UserColumnName="Покупка" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Продажа" msprop:Generator_ColumnVarNameInTable="columnПродажа" msprop:Generator_ColumnPropNameInRow="Продажа" msprop:Generator_ColumnPropNameInTable="ПродажаColumn" msprop:Generator_UserColumnName="Продажа" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Название_валюты" msprop:Generator_ColumnVarNameInTable="columnНазвание_валюты" msprop:Generator_ColumnPropNameInRow="Название_валюты" msprop:Generator_ColumnPropNameInTable="Название_валютыColumn" msprop:Generator_UserColumnName="Название_валюты" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Filtr_eetkCoin" msprop:Generator_TableClassName="Filtr_eetkCoinDataTable" msprop:Generator_TableVarName="tableFiltr_eetkCoin" msprop:Generator_TablePropName="Filtr_eetkCoin" msprop:Generator_RowDeletingName="Filtr_eetkCoinRowDeleting" msprop:Generator_RowChangingName="Filtr_eetkCoinRowChanging" msprop:Generator_RowEvHandlerName="Filtr_eetkCoinRowChangeEventHandler" msprop:Generator_RowDeletedName="Filtr_eetkCoinRowDeleted" msprop:Generator_UserTableName="Filtr_eetkCoin" msprop:Generator_RowChangedName="Filtr_eetkCoinRowChanged" msprop:Generator_RowEvArgName="Filtr_eetkCoinRowChangeEvent" msprop:Generator_RowClassName="Filtr_eetkCoinRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Дата" msprop:Generator_ColumnVarNameInTable="columnДата" msprop:Generator_ColumnPropNameInRow="Дата" msprop:Generator_ColumnPropNameInTable="ДатаColumn" msprop:Generator_UserColumnName="Дата" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Покупка" msprop:Generator_ColumnVarNameInTable="columnПокупка" msprop:Generator_ColumnPropNameInRow="Покупка" msprop:Generator_ColumnPropNameInTable="ПокупкаColumn" msprop:Generator_UserColumnName="Покупка" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Продажа" msprop:Generator_ColumnVarNameInTable="columnПродажа" msprop:Generator_ColumnPropNameInRow="Продажа" msprop:Generator_ColumnPropNameInTable="ПродажаColumn" msprop:Generator_UserColumnName="Продажа" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Название_валюты" msprop:Generator_ColumnVarNameInTable="columnНазвание_валюты" msprop:Generator_ColumnPropNameInRow="Название_валюты" msprop:Generator_ColumnPropNameInTable="Название_валютыColumn" msprop:Generator_UserColumnName="Название_валюты" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Filtr_dollar" msprop:Generator_TableClassName="Filtr_dollarDataTable" msprop:Generator_TableVarName="tableFiltr_dollar" msprop:Generator_TablePropName="Filtr_dollar" msprop:Generator_RowDeletingName="Filtr_dollarRowDeleting" msprop:Generator_RowChangingName="Filtr_dollarRowChanging" msprop:Generator_RowEvHandlerName="Filtr_dollarRowChangeEventHandler" msprop:Generator_RowDeletedName="Filtr_dollarRowDeleted" msprop:Generator_UserTableName="Filtr_dollar" msprop:Generator_RowChangedName="Filtr_dollarRowChanged" msprop:Generator_RowEvArgName="Filtr_dollarRowChangeEvent" msprop:Generator_RowClassName="Filtr_dollarRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Дата" msprop:Generator_ColumnVarNameInTable="columnДата" msprop:Generator_ColumnPropNameInRow="Дата" msprop:Generator_ColumnPropNameInTable="ДатаColumn" msprop:Generator_UserColumnName="Дата" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Покупка" msprop:Generator_ColumnVarNameInTable="columnПокупка" msprop:Generator_ColumnPropNameInRow="Покупка" msprop:Generator_ColumnPropNameInTable="ПокупкаColumn" msprop:Generator_UserColumnName="Покупка" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Продажа" msprop:Generator_ColumnVarNameInTable="columnПродажа" msprop:Generator_ColumnPropNameInRow="Продажа" msprop:Generator_ColumnPropNameInTable="ПродажаColumn" msprop:Generator_UserColumnName="Продажа" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Название_валюты" msprop:Generator_ColumnVarNameInTable="columnНазвание_валюты" msprop:Generator_ColumnPropNameInRow="Название_валюты" msprop:Generator_ColumnPropNameInTable="Название_валютыColumn" msprop:Generator_UserColumnName="Название_валюты" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Clients" msprop:Generator_TableClassName="ClientsDataTable" msprop:Generator_TableVarName="tableClients" msprop:Generator_TablePropName="Clients" msprop:Generator_RowDeletingName="ClientsRowDeleting" msprop:Generator_RowChangingName="ClientsRowChanging" msprop:Generator_RowEvHandlerName="ClientsRowChangeEventHandler" msprop:Generator_RowDeletedName="ClientsRowDeleted" msprop:Generator_UserTableName="Clients" msprop:Generator_RowChangedName="ClientsRowChanged" msprop:Generator_RowEvArgName="ClientsRowChangeEvent" msprop:Generator_RowClassName="ClientsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Фамилия" msprop:Generator_ColumnVarNameInTable="columnФамилия" msprop:Generator_ColumnPropNameInRow="Фамилия" msprop:Generator_ColumnPropNameInTable="ФамилияColumn" msprop:Generator_UserColumnName="Фамилия" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Имя" msprop:Generator_ColumnVarNameInTable="columnИмя" msprop:Generator_ColumnPropNameInRow="Имя" msprop:Generator_ColumnPropNameInTable="ИмяColumn" msprop:Generator_UserColumnName="Имя" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Отчество" msprop:Generator_ColumnVarNameInTable="columnОтчество" msprop:Generator_ColumnPropNameInRow="Отчество" msprop:Generator_ColumnPropNameInTable="ОтчествоColumn" msprop:Generator_UserColumnName="Отчество" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Адрес_проживания" msprop:Generator_ColumnVarNameInTable="columnАдрес_проживания" msprop:Generator_ColumnPropNameInRow="Адрес_проживания" msprop:Generator_ColumnPropNameInTable="Адрес_проживанияColumn" msprop:Generator_UserColumnName="Адрес_проживания" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Номер_телефона" msprop:Generator_ColumnVarNameInTable="columnНомер_телефона" msprop:Generator_ColumnPropNameInRow="Номер_телефона" msprop:Generator_ColumnPropNameInTable="Номер_телефонаColumn" msprop:Generator_UserColumnName="Номер_телефона" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Номер_паспорта" msprop:Generator_ColumnVarNameInTable="columnНомер_паспорта" msprop:Generator_ColumnPropNameInRow="Номер_паспорта" msprop:Generator_ColumnPropNameInTable="Номер_паспортаColumn" msprop:Generator_UserColumnName="Номер_паспорта" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Otchet_dogovor_o_vklade" msprop:Generator_TableClassName="Otchet_dogovor_o_vkladeDataTable" msprop:Generator_TableVarName="tableOtchet_dogovor_o_vklade" msprop:Generator_TablePropName="Otchet_dogovor_o_vklade" msprop:Generator_RowDeletingName="Otchet_dogovor_o_vkladeRowDeleting" msprop:Generator_RowChangingName="Otchet_dogovor_o_vkladeRowChanging" msprop:Generator_RowEvHandlerName="Otchet_dogovor_o_vkladeRowChangeEventHandler" msprop:Generator_RowDeletedName="Otchet_dogovor_o_vkladeRowDeleted" msprop:Generator_UserTableName="Otchet_dogovor_o_vklade" msprop:Generator_RowChangedName="Otchet_dogovor_o_vkladeRowChanged" msprop:Generator_RowEvArgName="Otchet_dogovor_o_vkladeRowChangeEvent" msprop:Generator_RowClassName="Otchet_dogovor_o_vkladeRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Валюта" msprop:Generator_ColumnVarNameInTable="columnВалюта" msprop:Generator_ColumnPropNameInRow="Валюта" msprop:Generator_ColumnPropNameInTable="ВалютаColumn" msprop:Generator_UserColumnName="Валюта" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Фамилия_клиента" msprop:Generator_ColumnVarNameInTable="columnФамилия_клиента" msprop:Generator_ColumnPropNameInRow="Фамилия_клиента" msprop:Generator_ColumnPropNameInTable="Фамилия_клиентаColumn" msprop:Generator_UserColumnName="Фамилия_клиента" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Имя_клиента" msprop:Generator_ColumnVarNameInTable="columnИмя_клиента" msprop:Generator_ColumnPropNameInRow="Имя_клиента" msprop:Generator_ColumnPropNameInTable="Имя_клиентаColumn" msprop:Generator_UserColumnName="Имя_клиента" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Отчество_клиента" msprop:Generator_ColumnVarNameInTable="columnОтчество_клиента" msprop:Generator_ColumnPropNameInRow="Отчество_клиента" msprop:Generator_ColumnPropNameInTable="Отчество_клиентаColumn" msprop:Generator_UserColumnName="Отчество_клиента" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Адрес_клиента" msprop:Generator_ColumnVarNameInTable="columnАдрес_клиента" msprop:Generator_ColumnPropNameInRow="Адрес_клиента" msprop:Generator_ColumnPropNameInTable="Адрес_клиентаColumn" msprop:Generator_UserColumnName="Адрес_клиента" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Тел_клиента" msprop:Generator_ColumnVarNameInTable="columnТел_клиента" msprop:Generator_ColumnPropNameInRow="Тел_клиента" msprop:Generator_ColumnPropNameInTable="Тел_клиентаColumn" msprop:Generator_UserColumnName="Тел_клиента" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Фамилия_сотрудника" msprop:Generator_ColumnVarNameInTable="columnФамилия_сотрудника" msprop:Generator_ColumnPropNameInRow="Фамилия_сотрудника" msprop:Generator_ColumnPropNameInTable="Фамилия_сотрудникаColumn" msprop:Generator_UserColumnName="Фамилия_сотрудника" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Имя_сотрудника" msprop:Generator_ColumnVarNameInTable="columnИмя_сотрудника" msprop:Generator_ColumnPropNameInRow="Имя_сотрудника" msprop:Generator_ColumnPropNameInTable="Имя_сотрудникаColumn" msprop:Generator_UserColumnName="Имя_сотрудника" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Отчество_сотрудника" msprop:Generator_ColumnVarNameInTable="columnОтчество_сотрудника" msprop:Generator_ColumnPropNameInRow="Отчество_сотрудника" msprop:Generator_ColumnPropNameInTable="Отчество_сотрудникаColumn" msprop:Generator_UserColumnName="Отчество_сотрудника" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Название_вклада" msprop:Generator_ColumnVarNameInTable="columnНазвание_вклада" msprop:Generator_ColumnPropNameInRow="Название_вклада" msprop:Generator_ColumnPropNameInTable="Название_вкладаColumn" msprop:Generator_UserColumnName="Название_вклада" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Минимальный_срок_x0028_год_x002F_лет_x0029_" msprop:Generator_ColumnVarNameInTable="_columnМинимальный_срок_год_лет_" msprop:Generator_ColumnPropNameInRow="_Минимальный_срок_год_лет_" msprop:Generator_ColumnPropNameInTable="_Минимальный_срок_год_лет_Column" msprop:Generator_UserColumnName="Минимальный_срок(год/лет)" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="Минимальная_сумма" msprop:Generator_ColumnVarNameInTable="columnМинимальная_сумма" msprop:Generator_ColumnPropNameInRow="Минимальная_сумма" msprop:Generator_ColumnPropNameInTable="Минимальная_суммаColumn" msprop:Generator_UserColumnName="Минимальная_сумма" type="xs:int" minOccurs="0" />
+              <xs:element name="Процентная_ставка" msprop:Generator_ColumnVarNameInTable="columnПроцентная_ставка" msprop:Generator_ColumnPropNameInRow="Процентная_ставка" msprop:Generator_ColumnPropNameInTable="Процентная_ставкаColumn" msprop:Generator_UserColumnName="Процентная_ставка" type="xs:double" minOccurs="0" />
+              <xs:element name="Дата_вклада" msprop:Generator_ColumnVarNameInTable="columnДата_вклада" msprop:Generator_ColumnPropNameInRow="Дата_вклада" msprop:Generator_ColumnPropNameInTable="Дата_вкладаColumn" msprop:Generator_UserColumnName="Дата_вклада" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Сумма_вклада" msprop:Generator_ColumnVarNameInTable="columnСумма_вклада" msprop:Generator_ColumnPropNameInRow="Сумма_вклада" msprop:Generator_ColumnPropNameInTable="Сумма_вкладаColumn" msprop:Generator_UserColumnName="Сумма_вклада" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Сумма_возрата" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnСумма_возрата" msprop:Generator_ColumnPropNameInRow="Сумма_возрата" msprop:Generator_ColumnPropNameInTable="Сумма_возратаColumn" msprop:Generator_UserColumnName="Сумма_возрата" type="xs:double" minOccurs="0" />
+              <xs:element name="Дата_возрата" msprop:Generator_ColumnVarNameInTable="columnДата_возрата" msprop:Generator_ColumnPropNameInRow="Дата_возрата" msprop:Generator_ColumnPropNameInTable="Дата_возратаColumn" msprop:Generator_UserColumnName="Дата_возрата" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Отметка_о_возрате_вклада" msprop:Generator_ColumnVarNameInTable="columnОтметка_о_возрате_вклада" msprop:Generator_ColumnPropNameInRow="Отметка_о_возрате_вклада" msprop:Generator_ColumnPropNameInTable="Отметка_о_возрате_вкладаColumn" msprop:Generator_UserColumnName="Отметка_о_возрате_вклада" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Dogovor_o_vklade" msprop:Generator_TableClassName="Dogovor_o_vkladeDataTable" msprop:Generator_TableVarName="tableDogovor_o_vklade" msprop:Generator_RowChangedName="Dogovor_o_vkladeRowChanged" msprop:Generator_TablePropName="Dogovor_o_vklade" msprop:Generator_RowDeletingName="Dogovor_o_vkladeRowDeleting" msprop:Generator_RowChangingName="Dogovor_o_vkladeRowChanging" msprop:Generator_RowEvHandlerName="Dogovor_o_vkladeRowChangeEventHandler" msprop:Generator_RowDeletedName="Dogovor_o_vkladeRowDeleted" msprop:Generator_RowClassName="Dogovor_o_vkladeRow" msprop:Generator_UserTableName="Dogovor_o_vklade" msprop:Generator_RowEvArgName="Dogovor_o_vkladeRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Code_dogov" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnCode_dogov" msprop:Generator_ColumnPropNameInRow="Code_dogov" msprop:Generator_ColumnPropNameInTable="Code_dogovColumn" msprop:Generator_UserColumnName="Code_dogov" type="xs:long" />
+              <xs:element name="Code_vkladchika" msprop:Generator_ColumnVarNameInTable="columnCode_vkladchika" msprop:Generator_ColumnPropNameInRow="Code_vkladchika" msprop:Generator_ColumnPropNameInTable="Code_vkladchikaColumn" msprop:Generator_UserColumnName="Code_vkladchika" type="xs:long" minOccurs="0" />
+              <xs:element name="Code_sotrud" msprop:Generator_ColumnVarNameInTable="columnCode_sotrud" msprop:Generator_ColumnPropNameInRow="Code_sotrud" msprop:Generator_ColumnPropNameInTable="Code_sotrudColumn" msprop:Generator_UserColumnName="Code_sotrud" type="xs:long" minOccurs="0" />
+              <xs:element name="Code_vklada" msprop:Generator_ColumnVarNameInTable="columnCode_vklada" msprop:Generator_ColumnPropNameInRow="Code_vklada" msprop:Generator_ColumnPropNameInTable="Code_vkladaColumn" msprop:Generator_UserColumnName="Code_vklada" type="xs:long" minOccurs="0" />
+              <xs:element name="Data_vklada" msprop:Generator_ColumnVarNameInTable="columnData_vklada" msprop:Generator_ColumnPropNameInRow="Data_vklada" msprop:Generator_ColumnPropNameInTable="Data_vkladaColumn" msprop:Generator_UserColumnName="Data_vklada" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Summa_vklada" msprop:Generator_ColumnVarNameInTable="columnSumma_vklada" msprop:Generator_ColumnPropNameInRow="Summa_vklada" msprop:Generator_ColumnPropNameInTable="Summa_vkladaColumn" msprop:Generator_UserColumnName="Summa_vklada" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Data_vazrata" msprop:Generator_ColumnVarNameInTable="columnData_vazrata" msprop:Generator_ColumnPropNameInRow="Data_vazrata" msprop:Generator_ColumnPropNameInTable="Data_vazrataColumn" msprop:Generator_UserColumnName="Data_vazrata" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Otmetka_o_vozrate" msprop:Generator_ColumnVarNameInTable="columnOtmetka_o_vozrate" msprop:Generator_ColumnPropNameInRow="Otmetka_o_vozrate" msprop:Generator_ColumnPropNameInTable="Otmetka_o_vozrateColumn" msprop:Generator_UserColumnName="Otmetka_o_vozrate" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Dolzhnosti" msprop:Generator_TableClassName="DolzhnostiDataTable" msprop:Generator_TableVarName="tableDolzhnosti" msprop:Generator_RowChangedName="DolzhnostiRowChanged" msprop:Generator_TablePropName="Dolzhnosti" msprop:Generator_RowDeletingName="DolzhnostiRowDeleting" msprop:Generator_RowChangingName="DolzhnostiRowChanging" msprop:Generator_RowEvHandlerName="DolzhnostiRowChangeEventHandler" msprop:Generator_RowDeletedName="DolzhnostiRowDeleted" msprop:Generator_RowClassName="DolzhnostiRow" msprop:Generator_UserTableName="Dolzhnosti" msprop:Generator_RowEvArgName="DolzhnostiRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Code_dol" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnCode_dol" msprop:Generator_ColumnPropNameInRow="Code_dol" msprop:Generator_ColumnPropNameInTable="Code_dolColumn" msprop:Generator_UserColumnName="Code_dol" type="xs:long" />
+              <xs:element name="Naim_dol" msprop:Generator_ColumnVarNameInTable="columnNaim_dol" msprop:Generator_ColumnPropNameInRow="Naim_dol" msprop:Generator_ColumnPropNameInTable="Naim_dolColumn" msprop:Generator_UserColumnName="Naim_dol" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Oklad" msprop:Generator_ColumnVarNameInTable="columnOklad" msprop:Generator_ColumnPropNameInRow="Oklad" msprop:Generator_ColumnPropNameInTable="OkladColumn" msprop:Generator_UserColumnName="Oklad" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Obazannosti" msprop:Generator_ColumnVarNameInTable="columnObazannosti" msprop:Generator_ColumnPropNameInRow="Obazannosti" msprop:Generator_ColumnPropNameInTable="ObazannostiColumn" msprop:Generator_UserColumnName="Obazannosti" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Trebovania" msprop:Generator_ColumnVarNameInTable="columnTrebovania" msprop:Generator_ColumnPropNameInRow="Trebovania" msprop:Generator_ColumnPropNameInTable="TrebovaniaColumn" msprop:Generator_UserColumnName="Trebovania" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Kurs" msprop:Generator_TableClassName="KursDataTable" msprop:Generator_TableVarName="tableKurs" msprop:Generator_RowChangedName="KursRowChanged" msprop:Generator_TablePropName="Kurs" msprop:Generator_RowDeletingName="KursRowDeleting" msprop:Generator_RowChangingName="KursRowChanging" msprop:Generator_RowEvHandlerName="KursRowChangeEventHandler" msprop:Generator_RowDeletedName="KursRowDeleted" msprop:Generator_RowClassName="KursRow" msprop:Generator_UserTableName="Kurs" msprop:Generator_RowEvArgName="KursRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Code_kurs" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnCode_kurs" msprop:Generator_ColumnPropNameInRow="Code_kurs" msprop:Generator_ColumnPropNameInTable="Code_kursColumn" msprop:Generator_UserColumnName="Code_kurs" type="xs:long" />
+              <xs:element name="Code_val" msprop:Generator_ColumnVarNameInTable="columnCode_val" msprop:Generator_ColumnPropNameInRow="Code_val" msprop:Generator_ColumnPropNameInTable="Code_valColumn" msprop:Generator_UserColumnName="Code_val" type="xs:int" minOccurs="0" />
+              <xs:element name="Data_kurs" msprop:Generator_ColumnVarNameInTable="columnData_kurs" msprop:Generator_ColumnPropNameInRow="Data_kurs" msprop:Generator_ColumnPropNameInTable="Data_kursColumn" msprop:Generator_UserColumnName="Data_kurs" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Cost_pokup" msprop:Generator_ColumnVarNameInTable="columnCost_pokup" msprop:Generator_ColumnPropNameInRow="Cost_pokup" msprop:Generator_ColumnPropNameInTable="Cost_pokupColumn" msprop:Generator_UserColumnName="Cost_pokup" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Cost_sale" msprop:Generator_ColumnVarNameInTable="columnCost_sale" msprop:Generator_ColumnPropNameInRow="Cost_sale" msprop:Generator_ColumnPropNameInTable="Cost_saleColumn" msprop:Generator_UserColumnName="Cost_sale" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Sotrudniki" msprop:Generator_TableClassName="SotrudnikiDataTable" msprop:Generator_TableVarName="tableSotrudniki" msprop:Generator_RowChangedName="SotrudnikiRowChanged" msprop:Generator_TablePropName="Sotrudniki" msprop:Generator_RowDeletingName="SotrudnikiRowDeleting" msprop:Generator_RowChangingName="SotrudnikiRowChanging" msprop:Generator_RowEvHandlerName="SotrudnikiRowChangeEventHandler" msprop:Generator_RowDeletedName="SotrudnikiRowDeleted" msprop:Generator_RowClassName="SotrudnikiRow" msprop:Generator_UserTableName="Sotrudniki" msprop:Generator_RowEvArgName="SotrudnikiRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Code_sotrud" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnCode_sotrud" msprop:Generator_ColumnPropNameInRow="Code_sotrud" msprop:Generator_ColumnPropNameInTable="Code_sotrudColumn" msprop:Generator_UserColumnName="Code_sotrud" type="xs:long" />
+              <xs:element name="Familia" msprop:Generator_ColumnVarNameInTable="columnFamilia" msprop:Generator_ColumnPropNameInRow="Familia" msprop:Generator_ColumnPropNameInTable="FamiliaColumn" msprop:Generator_UserColumnName="Familia" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Imya" msprop:Generator_ColumnVarNameInTable="columnImya" msprop:Generator_ColumnPropNameInRow="Imya" msprop:Generator_ColumnPropNameInTable="ImyaColumn" msprop:Generator_UserColumnName="Imya" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Otchestvo" msprop:Generator_ColumnVarNameInTable="columnOtchestvo" msprop:Generator_ColumnPropNameInRow="Otchestvo" msprop:Generator_ColumnPropNameInTable="OtchestvoColumn" msprop:Generator_UserColumnName="Otchestvo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Pol" msprop:Generator_ColumnVarNameInTable="columnPol" msprop:Generator_ColumnPropNameInRow="Pol" msprop:Generator_ColumnPropNameInTable="PolColumn" msprop:Generator_UserColumnName="Pol" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Data_birthday" msprop:Generator_ColumnVarNameInTable="columnData_birthday" msprop:Generator_ColumnPropNameInRow="Data_birthday" msprop:Generator_ColumnPropNameInTable="Data_birthdayColumn" msprop:Generator_UserColumnName="Data_birthday" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Adress" msprop:Generator_ColumnVarNameInTable="columnAdress" msprop:Generator_ColumnPropNameInRow="Adress" msprop:Generator_ColumnPropNameInTable="AdressColumn" msprop:Generator_UserColumnName="Adress" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Tel" msprop:Generator_ColumnVarNameInTable="columnTel" msprop:Generator_ColumnPropNameInRow="Tel" msprop:Generator_ColumnPropNameInTable="TelColumn" msprop:Generator_UserColumnName="Tel" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Pasport_data" msprop:Generator_ColumnVarNameInTable="columnPasport_data" msprop:Generator_ColumnPropNameInRow="Pasport_data" msprop:Generator_ColumnPropNameInTable="Pasport_dataColumn" msprop:Generator_UserColumnName="Pasport_data" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Code_dol" msprop:Generator_ColumnVarNameInTable="columnCode_dol" msprop:Generator_ColumnPropNameInRow="Code_dol" msprop:Generator_ColumnPropNameInTable="Code_dolColumn" msprop:Generator_UserColumnName="Code_dol" type="xs:long" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Valut" msprop:Generator_TableClassName="ValutDataTable" msprop:Generator_TableVarName="tableValut" msprop:Generator_RowChangedName="ValutRowChanged" msprop:Generator_TablePropName="Valut" msprop:Generator_RowDeletingName="ValutRowDeleting" msprop:Generator_RowChangingName="ValutRowChanging" msprop:Generator_RowEvHandlerName="ValutRowChangeEventHandler" msprop:Generator_RowDeletedName="ValutRowDeleted" msprop:Generator_RowClassName="ValutRow" msprop:Generator_UserTableName="Valut" msprop:Generator_RowEvArgName="ValutRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Code_val" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnCode_val" msprop:Generator_ColumnPropNameInRow="Code_val" msprop:Generator_ColumnPropNameInTable="Code_valColumn" msprop:Generator_UserColumnName="Code_val" type="xs:int" />
+              <xs:element name="Naz_val" msprop:Generator_ColumnVarNameInTable="columnNaz_val" msprop:Generator_ColumnPropNameInRow="Naz_val" msprop:Generator_ColumnPropNameInTable="Naz_valColumn" msprop:Generator_UserColumnName="Naz_val" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Vkladchiki" msprop:Generator_TableClassName="VkladchikiDataTable" msprop:Generator_TableVarName="tableVkladchiki" msprop:Generator_RowChangedName="VkladchikiRowChanged" msprop:Generator_TablePropName="Vkladchiki" msprop:Generator_RowDeletingName="VkladchikiRowDeleting" msprop:Generator_RowChangingName="VkladchikiRowChanging" msprop:Generator_RowEvHandlerName="VkladchikiRowChangeEventHandler" msprop:Generator_RowDeletedName="VkladchikiRowDeleted" msprop:Generator_RowClassName="VkladchikiRow" msprop:Generator_UserTableName="Vkladchiki" msprop:Generator_RowEvArgName="VkladchikiRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Code_vkladchika" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnCode_vkladchika" msprop:Generator_ColumnPropNameInRow="Code_vkladchika" msprop:Generator_ColumnPropNameInTable="Code_vkladchikaColumn" msprop:Generator_UserColumnName="Code_vkladchika" type="xs:long" />
+              <xs:element name="Familia" msprop:Generator_ColumnVarNameInTable="columnFamilia" msprop:Generator_ColumnPropNameInRow="Familia" msprop:Generator_ColumnPropNameInTable="FamiliaColumn" msprop:Generator_UserColumnName="Familia" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Imya" msprop:Generator_ColumnVarNameInTable="columnImya" msprop:Generator_ColumnPropNameInRow="Imya" msprop:Generator_ColumnPropNameInTable="ImyaColumn" msprop:Generator_UserColumnName="Imya" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Otchestvo" msprop:Generator_ColumnVarNameInTable="columnOtchestvo" msprop:Generator_ColumnPropNameInRow="Otchestvo" msprop:Generator_ColumnPropNameInTable="OtchestvoColumn" msprop:Generator_UserColumnName="Otchestvo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Adress" msprop:Generator_ColumnVarNameInTable="columnAdress" msprop:Generator_ColumnPropNameInRow="Adress" msprop:Generator_ColumnPropNameInTable="AdressColumn" msprop:Generator_UserColumnName="Adress" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Tel" msprop:Generator_ColumnVarNameInTable="columnTel" msprop:Generator_ColumnPropNameInRow="Tel" msprop:Generator_ColumnPropNameInTable="TelColumn" msprop:Generator_UserColumnName="Tel" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Pasport_data" msprop:Generator_ColumnVarNameInTable="columnPasport_data" msprop:Generator_ColumnPropNameInRow="Pasport_data" msprop:Generator_ColumnPropNameInTable="Pasport_dataColumn" msprop:Generator_UserColumnName="Pasport_data" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Vkladu" msprop:Generator_TableClassName="VkladuDataTable" msprop:Generator_TableVarName="tableVkladu" msprop:Generator_RowChangedName="VkladuRowChanged" msprop:Generator_TablePropName="Vkladu" msprop:Generator_RowDeletingName="VkladuRowDeleting" msprop:Generator_RowChangingName="VkladuRowChanging" msprop:Generator_RowEvHandlerName="VkladuRowChangeEventHandler" msprop:Generator_RowDeletedName="VkladuRowDeleted" msprop:Generator_RowClassName="VkladuRow" msprop:Generator_UserTableName="Vkladu" msprop:Generator_RowEvArgName="VkladuRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Code_vklada" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnCode_vklada" msprop:Generator_ColumnPropNameInRow="Code_vklada" msprop:Generator_ColumnPropNameInTable="Code_vkladaColumn" msprop:Generator_UserColumnName="Code_vklada" type="xs:long" />
+              <xs:element name="Nazvanie" msprop:Generator_ColumnVarNameInTable="columnNazvanie" msprop:Generator_ColumnPropNameInRow="Nazvanie" msprop:Generator_ColumnPropNameInTable="NazvanieColumn" msprop:Generator_UserColumnName="Nazvanie" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Min_srok" msprop:Generator_ColumnVarNameInTable="columnMin_srok" msprop:Generator_ColumnPropNameInRow="Min_srok" msprop:Generator_ColumnPropNameInTable="Min_srokColumn" msprop:Generator_UserColumnName="Min_srok" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="Min_summa" msprop:Generator_ColumnVarNameInTable="columnMin_summa" msprop:Generator_ColumnPropNameInRow="Min_summa" msprop:Generator_ColumnPropNameInTable="Min_summaColumn" msprop:Generator_UserColumnName="Min_summa" type="xs:int" minOccurs="0" />
+              <xs:element name="Code_val" msprop:Generator_ColumnVarNameInTable="columnCode_val" msprop:Generator_ColumnPropNameInRow="Code_val" msprop:Generator_ColumnPropNameInTable="Code_valColumn" msprop:Generator_UserColumnName="Code_val" type="xs:int" minOccurs="0" />
+              <xs:element name="Proc_stavka" msprop:Generator_ColumnVarNameInTable="columnProc_stavka" msprop:Generator_ColumnPropNameInRow="Proc_stavka" msprop:Generator_ColumnPropNameInTable="Proc_stavkaColumn" msprop:Generator_UserColumnName="Proc_stavka" type="xs:double" minOccurs="0" />
+              <xs:element name="Dop_uslovie" msprop:Generator_ColumnVarNameInTable="columnDop_uslovie" msprop:Generator_ColumnPropNameInRow="Dop_uslovie" msprop:Generator_ColumnPropNameInTable="Dop_uslovieColumn" msprop:Generator_UserColumnName="Dop_uslovie" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Dogovor_o_vklade" />
+      <xs:field xpath="mstns:Code_dogov" />
+    </xs:unique>
+    <xs:unique name="Dolzhnosti_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Dolzhnosti" />
+      <xs:field xpath="mstns:Code_dol" />
+    </xs:unique>
+    <xs:unique name="Kurs_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Kurs" />
+      <xs:field xpath="mstns:Code_kurs" />
+    </xs:unique>
+    <xs:unique name="Sotrudniki_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Sotrudniki" />
+      <xs:field xpath="mstns:Code_sotrud" />
+    </xs:unique>
+    <xs:unique name="Valut_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Valut" />
+      <xs:field xpath="mstns:Code_val" />
+    </xs:unique>
+    <xs:unique name="Vkladchiki_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Vkladchiki" />
+      <xs:field xpath="mstns:Code_vkladchika" />
+    </xs:unique>
+    <xs:unique name="Vkladu_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Vkladu" />
+      <xs:field xpath="mstns:Code_vklada" />
+    </xs:unique>
+  </xs:element>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="FK_Dogovor_o_vklade_Vkladu" msdata:parent="Vkladu" msdata:child="Dogovor_o_vklade" msdata:parentkey="Code_vklada" msdata:childkey="Code_vklada" msprop:Generator_UserChildTable="Dogovor_o_vklade" msprop:Generator_ChildPropName="GetDogovor_o_vkladeRows" msprop:Generator_UserRelationName="FK_Dogovor_o_vklade_Vkladu" msprop:Generator_ParentPropName="VkladuRow" msprop:Generator_RelationVarName="relationFK_Dogovor_o_vklade_Vkladu" msprop:Generator_UserParentTable="Vkladu" />
+      <msdata:Relationship name="FK_Dogovor_Sotrudniki" msdata:parent="Sotrudniki" msdata:child="Dogovor_o_vklade" msdata:parentkey="Code_sotrud" msdata:childkey="Code_sotrud" msprop:Generator_UserChildTable="Dogovor_o_vklade" msprop:Generator_ChildPropName="GetDogovor_o_vkladeRows" msprop:Generator_UserRelationName="FK_Dogovor_Sotrudniki" msprop:Generator_ParentPropName="SotrudnikiRow" msprop:Generator_RelationVarName="relationFK_Dogovor_Sotrudniki" msprop:Generator_UserParentTable="Sotrudniki" />
+      <msdata:Relationship name="FK_Dogovor_Vkladchiki" msdata:parent="Vkladchiki" msdata:child="Dogovor_o_vklade" msdata:parentkey="Code_vkladchika" msdata:childkey="Code_vkladchika" msprop:Generator_UserChildTable="Dogovor_o_vklade" msprop:Generator_ChildPropName="GetDogovor_o_vkladeRows" msprop:Generator_UserRelationName="FK_Dogovor_Vkladchiki" msprop:Generator_ParentPropName="VkladchikiRow" msprop:Generator_RelationVarName="relationFK_Dogovor_Vkladchiki" msprop:Generator_UserParentTable="Vkladchiki" />
+      <msdata:Relationship name="FK_Kurs_Valut" msdata:parent="Valut" msdata:child="Kurs" msdata:parentkey="Code_val" msdata:childkey="Code_val" msprop:Generator_UserChildTable="Kurs" msprop:Generator_ChildPropName="GetKursRows" msprop:Generator_UserRelationName="FK_Kurs_Valut" msprop:Generator_ParentPropName="ValutRow" msprop:Generator_RelationVarName="relationFK_Kurs_Valut" msprop:Generator_UserParentTable="Valut" />
+      <msdata:Relationship name="FK_Sotrudniki_Dolzhnosti" msdata:parent="Dolzhnosti" msdata:child="Sotrudniki" msdata:parentkey="Code_dol" msdata:childkey="Code_dol" msprop:Generator_UserChildTable="Sotrudniki" msprop:Generator_ChildPropName="GetSotrudnikiRows" msprop:Generator_UserRelationName="FK_Sotrudniki_Dolzhnosti" msprop:Generator_RelationVarName="relationFK_Sotrudniki_Dolzhnosti" msprop:Generator_UserParentTable="Dolzhnosti" msprop:Generator_ParentPropName="DolzhnostiRow" />
+      <msdata:Relationship name="FK_Vkladu_Valut" msdata:parent="Valut" msdata:child="Vkladu" msdata:parentkey="Code_val" msdata:childkey="Code_val" msprop:Generator_UserChildTable="Vkladu" msprop:Generator_ChildPropName="GetVkladuRows" msprop:Generator_UserRelationName="FK_Vkladu_Valut" msprop:Generator_RelationVarName="relationFK_Vkladu_Valut" msprop:Generator_UserParentTable="Valut" msprop:Generator_ParentPropName="ValutRow" />
+    </xs:appinfo>
+  </xs:annotation>
+</xs:schema>
